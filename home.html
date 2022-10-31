@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kush'n'Go</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="home" class="navbar-container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+            </nav>
+        
+        </section>
+    
+    <section id="about" class="image-container">  
+           <img src="images/company-logo.png">
+            <img src="images/app-download.png">
+    </section>
+ 
+
+    <section id="contact" class="email">
+        <form method="POST">
+            <label>Sign up for our newsletter</label>
+            <input type="email" id="email" name="email">
+           <form method="post">
+                <button type="submit" id="submit" onclick="message()" >send</button>
+            </form>
+        </form>
+        <div class="message">
+            <div class="success" id="success">
+                Your Message was successfully sent!
+            </div>
+            <div class="danger" id="danger">
+                Field can't be empty
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       <div class="ST"> @POWER BY SHEYO TECHNOLOGIES</div> 
+    </footer>
+
+    <script src="script.js"></script>
+<script src={{url_for('static', filename="alert.js") }}></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #b39bc8;
+    background-color: #212121;
+    font-family: 'Merriweather', serif;
+    letter-spacing: .1rem;
+}
+
+.navbar-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #212121;
+    padding: 3rem;
+    
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    padding-top: 1rem;
+
+  }
+  
+  li a, li{
+    color: #b39bc8;
+    margin-bottom: 1rem;
+    text-decoration: none;
+
+  }
+  
+
+  li a:hover:not(.active) {
+    color: rgb(96, 96, 96);
+    letter-spacing: .5rem;
+    transition: 1s;
+  }
+
+
+
+
+
+img{
+display: flex;
+width: 100%;
+  overflow: hidden;;    
+}
+   
+.email{
+    background-color: #d9d9d9;
+    margin: auto;
+    width: 100%;
+    padding: 10rem;
+    height: 100%
+}
+
+label{
+    color: #b39bc8;
+    font-size: 18px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: .3rem;
+    outline: none;
+}
+
+button[type=submit] {
+    background-color: #b39bc8;
+    border: none;
+    color: #d9d9d9;
+    width: 100%;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    margin: .1rem 0;
+    cursor: pointer;
+   
+}
+.message .success {
+    font-size: 1.2rem;
+    color: green;
+    position: absolute;
+    display: none;
+}
+.message .danger {
+    font-size: 1.2rem;
+    color: red;
+    position: absolute;
+    display: none; 
+}
+
+
+/*footer*/
+footer {
+background-color: #212121;
+padding: 4rem;
+margin: 4rem;
+
+}
+
+
+@media  (min-width: 600px) {
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    li {
+        padding: 1rem;
+    }
+   .email {
+        margin-top: 5rem;
+        display: block;
+        width: 70%;
+        border-radius: .4rem;
+    
+    }
+}
